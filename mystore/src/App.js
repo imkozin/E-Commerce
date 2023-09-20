@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import { Route, Routes } from 'react-router-dom'
 import Product from './components/Product'
-import Products from './components/Products'
+import Categories from './components/Categories'
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products/:id" element={<Product />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products" element={<Categories />} />
+        <Route path="categories/:name" element={<Categories/>}/>
         <Route path="*" element={<div>404</div>} />
       </Routes>
       <Footer />
