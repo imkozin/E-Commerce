@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './pages/Home';
-// import Header from './components/Header';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import ProductDetails from './pages/ProductDetails';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -9,12 +10,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-    {/* <Header /> */}
+    <Header />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/product:id' element={<ProductDetails/>}/>
       </Routes>
-      {/* <Sidebar/> */}
+      <Sidebar/>
       {/* <Footer/> */}
     </BrowserRouter>
   );
