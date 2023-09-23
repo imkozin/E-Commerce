@@ -29,7 +29,7 @@ const Product = ({product}) => {
             </div>
           </button>
           <Link
-            to={`/products/${id}`}
+            to={`/product/${id}`}
             className="w-12 h-12 bg-white flex justify-center items-center text-primary drop-shadow-xl"
           >
             <VisibilityIcon />
@@ -37,7 +37,7 @@ const Product = ({product}) => {
         </div>
         <div>
           <div className="mt-1 text-sm text-gray-500">{category}</div>
-          <Link to={`/products/${id}`}>
+          <Link to={`/product/${id}`}>
             <h2 className="mt-2 mb-1 text-sm text-gray-700">{title}</h2>
           </Link>
           <div className="text-sm font-medium text-gray-900">$ {price}</div>
