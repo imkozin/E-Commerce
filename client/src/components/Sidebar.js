@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { SidebarContext } from "./SidebarContext";
+import { CartContext } from "./CartContext";
 import { useContext } from "react";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
 const Sidebar = () => {
+    const {cart, setCart} = useContext(CartContext);
     const {isOpen, handleClose} = useContext(SidebarContext);
 
     return (
