@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SidebarContext } from './SidebarContext';
 import { CartContext } from './CartContext';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 
 
 const Header = () => {
@@ -31,7 +31,7 @@ const Header = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative text-2xl"
         >
-          <ShoppingBagIcon className="" />
+          <ShoppingCartIcon className="text-2xl" />
           <div className="bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
             {itemAmount}
           </div>
