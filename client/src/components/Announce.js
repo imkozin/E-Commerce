@@ -1,10 +1,25 @@
-import { Close } from "@mui/icons-material";
+import { Close } from '@mui/icons-material'
+import { useState } from 'react'
 
 const Announce = () => {
-    return <div className="bg-[] font-bold">
-        <h2>Hurry up it's 40% off now</h2>
-        <Close />
+  const [isAnnounced, setIsAnnounced] = useState(true)
+
+  const handleClose = () => {
+    setIsAnnounced(false)
+  }
+
+  return (
+    <div
+      className={`${
+        isAnnounced
+          ? 'bg-pink-200 font-bold flex items-center justify-center'
+          : 'hidden'
+      }`}
+    >
+      <h2>Hurry up it's 40% off now</h2>
+      <Close className="cursor-pointer" onClick={handleClose} />
     </div>
+  )
 }
 
-export default Announce;
+export default Announce
