@@ -12,7 +12,7 @@ const Announce = () => {
     <div
       className={`${
         isAnnounced
-          ? 'bg-pink-200 font-bold flex items-center justify-center'
+          ? 'bg-pink-200 font-bold text-[20px] flex items-center justify-center h-[50px]'
           : 'hidden'
       }`}
     >

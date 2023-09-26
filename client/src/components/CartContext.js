@@ -7,6 +7,10 @@ const CartProvider = ({children}) => {
     const [itemAmount, setItemAmount] = useState(0)
     const [total, setTotal] = useState(0);
 
+    // useEffect(() => {
+    //     const storedGoods = localStorage.setItem('goods', )
+    // })
+
     useEffect(() => {
         const total = cart.reduce((acc, currentItem) => {
             return acc + currentItem.price * currentItem.amount;
@@ -75,6 +79,7 @@ const CartProvider = ({children}) => {
         }
       }
 
+    
     
 
     return (

@@ -40,7 +40,7 @@ const Header = () => {
             className="cursor-pointer ml-[25px] hover:underline"
           >
             Login
-          </Link>
+          </Link>   
           <div className="searchInput flex border-[2px] border-solid border-orange-200 rounded-md items-center ml-[10px] p-[5px] focus-within:border-gray-500 transition-all">
             <input className="input outline-none" type="text" />
             <Search className="" />
@@ -53,10 +53,6 @@ const Header = () => {
           <Badge badgeContent={itemAmount} color="error">
             <ShoppingCartIcon />
           </Badge>
-          {/* <ShoppingCartIcon className="text-2xl" />
-          <div className="bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
-            {itemAmount}
-          </div> */}
         </div>
       </div>
     </header>

@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { ProductContext } from '../components/ProductContext';
 import Product from '../components/Product';
 import Hero from '../components/Hero';
-// import Slider from '../components/Slider';
 import Announce from '../components/Announce';
 
 

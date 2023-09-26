@@ -15,7 +15,6 @@ const Product = ({product}) => {
           className="border border-[#e4e4e4] aspect-h-1 aspect-w-1 w-full bg-white overflow-hidden rounded-lg
           xl:aspect-h-8 xl:aspect-w-7"
         >
-          {/* // "w-full h-full flex justify-center items-center" // "h-full w-full object-center group-hover:opacity-75 z-0 hover:z-10"*/}
           <img
             className="max-h-[250px] group-hover:scale-110 transition duration-300 object-contain h-full w-full object-center group-hover:opacity-75"
             src={image}
